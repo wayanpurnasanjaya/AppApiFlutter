@@ -20,6 +20,7 @@ class DetaiListUser extends StatelessWidget {
         child: Center(
 
           child: Column(
+
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -33,7 +34,7 @@ class DetaiListUser extends StatelessWidget {
                   ),
                   Text(user.firstName),
                   Text(user.lastName),
-                  Text(user.avatar),
+                  Image.network(user.avatar),
 
 
                 ],
