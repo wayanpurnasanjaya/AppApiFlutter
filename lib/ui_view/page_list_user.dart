@@ -61,11 +61,19 @@ class _PageUserListState extends State<PageUserList> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Column(children: [Image.network(nDataList.avatar),],),
-                      Column(children: [
-                        Text(nDataList.id.toString(),style: TextStyle(color: Colors.white),textAlign: TextAlign.start,),
-                        Text(nDataList.firstName + "" + nDataList.lastName, style: TextStyle(color: Colors.white),textAlign: TextAlign.start,),
-                        Text(nDataList.email, style: TextStyle(color:Colors.white),textAlign: TextAlign.start,),
-                      ],),
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                          SizedBox(height: 5,),
+                            Text(nDataList.id.toString(),style: TextStyle(color: Colors.white),textAlign: TextAlign.start,),
+                            SizedBox(height: 5,),
+                          Text(nDataList.firstName + "" + nDataList.lastName, style: TextStyle(color: Colors.white),textAlign: TextAlign.start,),
+                            SizedBox(height: 5,),
+                          Text(nDataList.email, style: TextStyle(color:Colors.white),textAlign: TextAlign.start,),
+                        ],),
+                      ),
 
 
                     ],
