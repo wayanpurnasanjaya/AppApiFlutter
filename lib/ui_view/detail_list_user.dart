@@ -26,14 +26,14 @@ class DetaiListUser extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    user.email,
+                    "Email:" + user.email,
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
                         color: Colors.green),
                   ),
-                  Text(user.firstName),
-                  Text(user.lastName),
+                  Text("First Name"+ user.firstName),
+                  Text("Last Name"+user.lastName),
                   Image.network(user.avatar),
 
 
